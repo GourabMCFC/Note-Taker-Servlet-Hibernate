@@ -4,6 +4,16 @@
 
 <web-app>
 	<description>Note Taker Application</description>
+	<servlet>
+		<servlet-name>Test</servlet-name>
+		<display-name>Test</display-name>
+		<description></description>
+		<servlet-class>Test</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Test</servlet-name>
+		<url-pattern>/test</url-pattern>
+	</servlet-mapping>
 	<resource-ref>
 		<description>DB Connection</description>
 		<res-ref-name>JDS</res-ref-name>
