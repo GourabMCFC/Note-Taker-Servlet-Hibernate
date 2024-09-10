@@ -4,6 +4,16 @@
 
 <web-app>
 	<description>Note Taker Application</description>
+	<servlet>
+		<servlet-name>CreateNote</servlet-name>
+		<display-name>CreateNote</display-name>
+		<description>Servlet for Adding A New Note To DB</description>
+		<servlet-class>servlets.CreateNote</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CreateNote</servlet-name>
+		<url-pattern>/CreateNote</url-pattern>
+	</servlet-mapping>
 	<resource-ref>
 		<description>DB Connection</description>
 		<res-ref-name>JDS</res-ref-name>

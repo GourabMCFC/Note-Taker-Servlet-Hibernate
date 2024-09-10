@@ -21,16 +21,19 @@
 					create note</div>
 				<div class="col-12">
 					<div class="mb-3">
-						<label for="title" class="form-label">Title</label> <input
+						<label for="title" class="form-label">Title<sup
+							class="text-danger">*</sup></label> <input required="required"
 							type="text" class="form-control fs-4 py-2" name="title"
 							id="title" placeholder="Enter Note Title" />
 					</div>
 				</div>
 				<div class="col-12">
 					<div class="mb-3">
-						<label for="description" class="form-label">Description</label>
-						<textarea class="form-control fs-4 py-2" name="description"
-							id="description" placeholder="Enter Note Description"></textarea>
+						<label for="description" class="form-label">Description<sup
+							class="text-danger">*</sup></label>
+						<textarea required="required" class="form-control fs-4 py-2"
+							name="description" id="description"
+							placeholder="Enter Note Description"></textarea>
 					</div>
 				</div>
 				<div class="col-12 text-center">
