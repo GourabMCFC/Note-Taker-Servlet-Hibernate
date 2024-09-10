@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+body {
+	background-color: #ceadbf;
+}
+
+textarea {
+	resize: none;
+	height: 20rem;
+}
