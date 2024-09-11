@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,6 +36,16 @@
 											${note.title}</h4>
 										<p
 											class="card-text card-text-height fs-4 fw-semibold overflow-scroll">${note.description}</p>
+										<p class="card-text fs-6 fw-light">
+											Created :
+											<fmt:formatDate value="${note.createdAt}"
+												pattern="d/MM/yy hh:mm a"></fmt:formatDate>
+										</p>
+										<p class="card-text fs-6 fw-light">
+											Updated :
+											<fmt:formatDate value="${note.updatedAt}"
+												pattern="d/MM/yy hh:mm a"></fmt:formatDate>
+										</p>
 										<a id="edit"
 											class="btn btn-success fw-bold fs-6 text-uppercase px-3"
 											href="update.jsp?id=${note.id}" role="button">Edit</a>
