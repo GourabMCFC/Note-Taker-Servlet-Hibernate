@@ -30,7 +30,11 @@ function postRequest(link, data, submitBtn, loader) {
 		}
 	});
 	xhr.addEventListener("error", () => {
-		toggleLoader(submitBtn, loader);
+		Swal.fire({
+			title: "Oops...",
+			text: "Network Error!",
+			icon: "error",
+		}).then(() => toggleLoader(submitBtn, loader));
 	});
 	xhr.open("POST", link);
 	xhr.send(data);

@@ -13,6 +13,13 @@
 		<servlet-name>GetNotes</servlet-name>
 		<servlet-class>servlets.GetNotes</servlet-class>
 	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>DeletePost</display-name>
+		<servlet-name>DeletePost</servlet-name>
+		<servlet-class>servlets.DeletePost</servlet-class>
+	</servlet>
 	<servlet-mapping>
 		<servlet-name>CreateNote</servlet-name>
 		<url-pattern>/CreateNote</url-pattern>
@@ -20,6 +27,10 @@
 	<servlet-mapping>
 		<servlet-name>GetNotes</servlet-name>
 		<url-pattern>/GetNotes</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DeletePost</servlet-name>
+		<url-pattern>/DeletePost</url-pattern>
 	</servlet-mapping>
 	<resource-ref>
 		<description>DB Connection</description>

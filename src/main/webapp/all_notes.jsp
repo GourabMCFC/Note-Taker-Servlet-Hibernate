@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>NOTETAKER - Home Page</title>
+<title>NOTETAKER - Show Page</title>
 <%@ include file="includes.jsp"%>
 </head>
 
@@ -33,11 +33,13 @@
 										<h4
 											class="card-title card-title-height overflow-hidden fw-bold fs-2 text-uppercase text-decoration-underline">
 											${note.title}</h4>
-										<p class="card-text card-text-height fs-4 fw-semibold overflow-scroll">${note.description}</p>
+										<p
+											class="card-text card-text-height fs-4 fw-semibold overflow-scroll">${note.description}</p>
 										<a id="edit"
 											class="btn btn-success fw-bold fs-6 text-uppercase px-3"
 											href="#" role="button">Edit</a>
-										<form action="delete" method="post" class="d-inline">
+										<form class="d-inline">
+											<input type="hidden" name="id" value="${note.id}">
 											<button type="button"
 												class="btn btn-danger fw-bold fs-6 text-uppercase px-3 ms-2">
 												Delete</button>
@@ -51,5 +53,7 @@
 			</div>
 		</div>
 	</main>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<script type="text/javascript" src="javascripts/deletePost.js"></script>
 </body>
 </html>
