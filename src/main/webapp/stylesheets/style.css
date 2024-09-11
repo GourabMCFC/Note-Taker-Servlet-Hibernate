@@ -8,3 +8,12 @@ textarea {
 	resize: none;
 	height: 20rem;
 }
+
+.card-img {
+	height: 7rem;
+	width: fit-content;
+}
+
+.card-bg {
+	background-color: #d49fbb;
+}

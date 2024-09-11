@@ -9,9 +9,17 @@
 		<servlet-name>CreateNote</servlet-name>
 		<servlet-class>servlets.CreateNote</servlet-class>
 	</servlet>
+	<servlet>
+		<servlet-name>GetNotes</servlet-name>
+		<servlet-class>servlets.GetNotes</servlet-class>
+	</servlet>
 	<servlet-mapping>
 		<servlet-name>CreateNote</servlet-name>
 		<url-pattern>/CreateNote</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>GetNotes</servlet-name>
+		<url-pattern>/GetNotes</url-pattern>
 	</servlet-mapping>
 	<resource-ref>
 		<description>DB Connection</description>
