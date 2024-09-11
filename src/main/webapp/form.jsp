@@ -10,6 +10,7 @@
 				<label for="title" class="form-label">Title<sup
 					class="text-danger">*</sup></label> <input required="required" type="text"
 					class="form-control fs-4 py-2" name="title" id="title"
+					value="${note != null ? note.title : '' }"
 					placeholder="Enter Note Title" />
 			</div>
 		</div>
@@ -19,9 +20,12 @@
 					class="text-danger">*</sup></label>
 				<textarea required="required" class="form-control fs-4 py-2"
 					name="description" id="description"
-					placeholder="Enter Note Description"></textarea>
+					placeholder="Enter Note Description">${note != null ? note.description : '' }</textarea>
 			</div>
 		</div>
+		<c:if test="${note != null}">
+			<input value="${note.id}" name="id" type="hidden">
+		</c:if>
 		<div class="col-12 text-center">
 			<button type="submit" class="btn btn-dark text-uppercase fs-3 px-4">
 				${param.submitBtn} Note</button>
@@ -29,7 +33,6 @@
 				type="button" disabled>
 				<span class="spinner-grow spinner-grow-md" aria-hidden="true"></span>
 				<span role="status" class="fs-3">Loading...</span>
-
 			</button>
 		</div>
 

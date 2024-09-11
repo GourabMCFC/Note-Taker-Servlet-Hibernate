@@ -20,7 +20,10 @@ function postRequest(link, data, submitBtn, loader) {
 				title: "Created!",
 				text: "Note Created Successfully!",
 				icon: "success"
-			}).then(() => toggleLoader(submitBtn, loader));
+			}).then(() => {
+				toggleLoader(submitBtn, loader);
+				window.location = "index.jsp"
+			});
 		} else {
 			Swal.fire({
 				title: "Oops...",

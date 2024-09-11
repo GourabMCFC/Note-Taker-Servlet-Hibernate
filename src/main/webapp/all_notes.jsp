@@ -37,7 +37,7 @@
 											class="card-text card-text-height fs-4 fw-semibold overflow-scroll">${note.description}</p>
 										<a id="edit"
 											class="btn btn-success fw-bold fs-6 text-uppercase px-3"
-											href="#" role="button">Edit</a>
+											href="update.jsp?id=${note.id}" role="button">Edit</a>
 										<form class="d-inline">
 											<input type="hidden" name="id" value="${note.id}">
 											<button type="button"
