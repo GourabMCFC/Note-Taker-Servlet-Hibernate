@@ -17,3 +17,11 @@ textarea {
 .card-bg {
 	background-color: #d49fbb;
 }
+
+.card-text-height {
+	height: 20rem;
+}
+
+.card-title-height{
+	max-height: 5rem;
+}

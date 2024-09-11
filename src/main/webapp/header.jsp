@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg text-uppercase">
 	<div class="container">
 		<a class="navbar-brand fs-1 fw-bold text-decoration-underline"
-			href="#">Note Taker</a>
+			href="index.jsp">Note Taker</a>
 		<button class="navbar-toggler d-lg-none" type="button"
 			data-bs-toggle="collapse" data-bs-target="#collapsibleNavId"
 			aria-controls="collapsibleNavId" aria-expanded="false"
