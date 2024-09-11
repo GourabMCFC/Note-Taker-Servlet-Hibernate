@@ -17,8 +17,8 @@ function postRequest(link, data, submitBtn, loader) {
 		const { success } = JSON.parse(xhr.responseText);
 		if (success) {
 			Swal.fire({
-				title: "Created!",
-				text: "Note Created Successfully!",
+				title: success === "updated" ? "Updated!" : "Created!",
+				text: `Note ${success === "updated" ? "Updated" : "Created"} Successfully!`,
 				icon: "success"
 			}).then(() => {
 				toggleLoader(submitBtn, loader);
