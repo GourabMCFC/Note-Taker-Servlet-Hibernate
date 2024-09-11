@@ -18,6 +18,7 @@
 	<main>
 		<c:import url="form.jsp">
 			<c:param name="formTitle" value="Create Note"></c:param>
+			<c:param name="submitBtn" value="Add"></c:param>
 			<c:param name="submitLink" value="CreateNote"></c:param>
 		</c:import>
 	</main>

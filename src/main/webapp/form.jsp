@@ -24,7 +24,7 @@
 		</div>
 		<div class="col-12 text-center">
 			<button type="submit" class="btn btn-dark text-uppercase fs-3 px-4">
-				Add Note</button>
+				${param.submitBtn} Note</button>
 			<button id="loader" class="btn btn-dark text-uppercase d-none"
 				type="button" disabled>
 				<span class="spinner-grow spinner-grow-md" aria-hidden="true"></span>
@@ -37,4 +37,5 @@
 	<!-- Element To Store The Server Information Used in JS File -->
 	<div id="dataElements" data-submitLink="${param.submitLink}"></div>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script type="text/javascript" src="javascripts/ajax.js"></script>

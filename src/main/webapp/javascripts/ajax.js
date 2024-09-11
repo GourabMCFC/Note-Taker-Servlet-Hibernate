@@ -14,7 +14,20 @@ function postRequest(link, data, submitBtn, loader) {
 	toggleLoader(submitBtn, loader);
 	const xhr = new XMLHttpRequest();
 	xhr.addEventListener("load", () => {
-		toggleLoader(submitBtn, loader);
+		const { success } = JSON.parse(xhr.responseText);
+		if (success) {
+			Swal.fire({
+				title: "Created!",
+				text: "Note Created Successfully!",
+				icon: "success"
+			}).then(() => toggleLoader(submitBtn, loader));
+		} else {
+			Swal.fire({
+				title: "Oops...",
+				text: "Something went wrong!",
+				icon: "error",
+			}).then(() => toggleLoader(submitBtn, loader));
+		}
 	});
 	xhr.addEventListener("error", () => {
 		toggleLoader(submitBtn, loader);
