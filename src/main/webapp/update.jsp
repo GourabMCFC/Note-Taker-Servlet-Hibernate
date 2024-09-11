@@ -25,12 +25,20 @@
 		hiberSession.close();
 		request.setAttribute("note", note); // Set note as a request attribute
 		%>
-		<c:import url="form.jsp">
-			<c:param name="formTitle" value="Update Note"></c:param>
-			<c:param name="submitBtn" value="Update"></c:param>
-			<c:param name="submitLink" value="UpdateNote"></c:param>
-			<c:param name="note" value="${note}"></c:param>
-		</c:import>
+		<c:choose>
+			<c:when test="${note == null}">
+				<h1 class="text-center text-uppercase fs-1 fw-bold">Invalid ID</h1>
+			</c:when>
+			<c:otherwise>
+				<c:import url="form.jsp">
+					<c:param name="formTitle" value="Update Note"></c:param>
+					<c:param name="submitBtn" value="Update"></c:param>
+					<c:param name="submitLink" value="UpdateNote"></c:param>
+					<c:param name="note" value="${note}"></c:param>
+				</c:import>
+			</c:otherwise>
+		</c:choose>
+
 	</main>
 </body>
 </html>

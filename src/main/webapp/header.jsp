@@ -11,7 +11,7 @@
 		<div class="collapse navbar-collapse fs-4 fw-semibold"
 			id="collapsibleNavId">
 			<ul class="navbar-nav me-auto mt-2 mt-lg-0">
-				<li class="nav-item"><a class="nav-link active" href="GetNotes"
+				<li class="nav-item"><a class="nav-link" href="GetNotes"
 					aria-current="page">Show Notes <span class="visually-hidden">(current)</span></a></li>
 				<li class="nav-item"><a class="nav-link" href="create.jsp">Add
 						Note</a></li>
