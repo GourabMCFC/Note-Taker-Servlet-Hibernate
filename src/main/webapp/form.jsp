@@ -23,9 +23,16 @@
 			</div>
 		</div>
 		<div class="col-12 text-center">
-			<button type="submit" class="btn btn-dark fs-3 text-uppercase px-4">
+			<button type="submit" class="btn btn-dark text-uppercase fs-3 px-4">
 				Add Note</button>
+			<button id="loader" class="btn btn-dark text-uppercase d-none"
+				type="button" disabled>
+				<span class="spinner-grow spinner-grow-md" aria-hidden="true"></span>
+				<span role="status" class="fs-3">Loading...</span>
+
+			</button>
 		</div>
+
 	</form>
 	<!-- Element To Store The Server Information Used in JS File -->
 	<div id="dataElements" data-submitLink="${param.submitLink}"></div>
