@@ -1,3 +1,4 @@
+<link rel="shortcut icon" href="images/notepad.png" type="image/x-icon">
 <!-- Required meta tags -->
 <meta charset="utf-8" />
 <meta name="viewport"
